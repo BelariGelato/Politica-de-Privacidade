@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"> <!-- Define o conjunto de caracteres -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a viewport -->
+<title>Política de Privacidade</title>
+<link rel="icon" type="image/png" href="https://github.com/rodrigos-aquino/Imagens_Teste/blob/main/mdagua.jpg?raw=true"/> <!-- Ícone da página -->
+
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://raw.githubusercontent.com/rodrigos-aquino/Imagens_Teste/3b1db20e1f12965bb05b33fd5c8f74128eda2fa0/Fundo_privacidade%20II.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .faq-question {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq-question h2 {
+    margin: 0 10px;
+    color: #e40c64;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+
+  .faq-toggle {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #e40c64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    z-index: 2;
+    position: absolute;
+    right: 10px;
+  }
+
+  .show-answer {
+    max-height: 1000px;
+  }
+</style>
+</head>
+<body>
+
+<div itemscope itemtype="https://schema.org/FAQPage">
+  
+  <div class="faq-question" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+    <h2 itemprop="name">Para que utilizamos seus dados?</h2>
+    <div class="faq-toggle" onclick="toggleAnswer(this)">+</div>
+    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+      <p itemprop="text">As informações coletadas pela Belari Gelato são utilizadas apenas para fins legítimos e lícitos e relacionados com nossa atividade,<br> sempre observando as legislações vigentes e boas práticas de mercado. Dessa forma, buscamos:
+        <ul>
+          <li>oferecer produtos e serviços adequados ao seu perfil de consumo;</li>
+          <li>melhorar sua satisfação conosco;</li>
+          <li>proporcionar uma melhor experiência com a Belari e seu atendimento;</li>
+          <li>cumprir com as exigências legais (como: leis, regulamentações e resoluções);</li>
+          <li>atender às suas necessidades e expectativas como cliente, parceiro ou colaborador.</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-question" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+    <h2 itemprop="name">O sigilo é muito importante para nós!</h2>
+    <div class="faq-toggle" onclick="toggleAnswer(this)">+</div>
+    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+      <p itemprop="text">O sigilo de suas informações e a sua privacidade são muito importantes para a Belari Gelato. Quando você nos procura e se cadastra em nosso site, tomamos os cuidados necessários para garantir o sigilo, a proteção e o uso adequado dos seus dados.</p>
+    </div>
+  </div>
+
+  <div class="faq-question" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+    <h2 itemprop="name">Sua proteção</h2>
+    <div class="faq-toggle" onclick="toggleAnswer(this)">+</div>
+    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+      <p itemprop="text">A Belari Gelato adota as melhores práticas de segurança para garantir a integridade e a confidencialidade dos dados coletados, adotando mecanismos de proteção contra uso indevido, tentativas de acesso não autorizados, fraudes, danos, sabotagens e roubos.</p>
+    </div>
+  </div>
+
+  <div class="faq-question" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+    <h2 itemprop="name">Nosso compromisso</h2>
+    <div class="faq-toggle" onclick="toggleAnswer(this)">+</div>
+    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+      <p itemprop="text">Nos comprometemos a proteger os dados que coletamos e utilizamos, zelando pelo tratamento ético, transparente e responsável dos seus dados, em todo o seu ciclo de vida.</p>
+    </div>
+  </div>
+
+  <div class="faq-question" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+    <h2 itemprop="name">Quando e como coletamos seus dados?</h2>
+    <div class="faq-toggle" onclick="toggleAnswer(this)">+</div>
+    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+      <p itemprop="text">Em algumas situações você nos fornece seus dados se cadastrando em nosso site e promoções.</p>
+    </div>
+  </div>
+
+  <div class="faq-question" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+    <h2 itemprop="name">Você nos fornece seus dados quando:</h2>
+    <div class="faq-toggle" onclick="toggleAnswer(this)">+</div>
+    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+      <ul>
+        <li>Você se cadastra em nossas lojas;</li>
+        <li>Participa de promoções coordenadas pela Belari Gelato.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="faq-question" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+    <h2 itemprop="name">Nós coletamos os seus dados quando:</h2>
+    <div class="faq-toggle" onclick="toggleAnswer(this)">+</div>
+    <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+      <ul>
+        <li>você navega no nosso site na internet;</li>
+        <li>você preenche o formulário de promoções.</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Adicione mais perguntas e respostas aqui conforme necessário -->
+
+</div>
+
+<script>
+  function toggleAnswer(button) {
+      var question = button.parentElement; /*<!-- Seleciona o elemento pai do botão (pergunta) --*/
+      var answer = question.querySelector('.faq-answer'); /*<!-- Seleciona o próximo elemento irmão (resposta) --*/
+      answer.classList.toggle('show-answer'); /*<!-- Adiciona ou remove a classe 'show-answer' na resposta --*/
+      button.textContent = answer.classList.contains('show-answer') ? '-' : '+'; /*<!-- Altera o texto do botão com base na presença da classe 'show-answer' --*/
+  }
+</script>
+
+</body>
+</html>
